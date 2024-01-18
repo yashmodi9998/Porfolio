@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Stalemate&display=swap');
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    width: 1366px;
+    margin: 0px  auto;
+}
+
+/* css for header 
+where used flex to make content in a line */
+header{
+    padding: 31px 177px;
+    height: 61px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+/* To disable Menu Icon */
+.menu-icon{
+    display: none;
+}
+
+
+/* set font and text decoration for logo/site */
+#logo-and-site-name{
+flex:1;
+font-size: 57px;
+font-family: 'Stalemate', cursive;
+font-weight: 500;
+text-align: left;
+color: white;
+}
+/* margin padding for the H-tag text set to 0 px */
+h1,h2,h3,h4,h5{
+    margin: 0px;
+    padding: 0px;
+}
+/* make style of list as none */
+li{
+    list-style: none;
+}
+/* set font size and decoration for a tag. */
+li a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+/* For highlighting active page */
+.active a{
+    color: #fb7535;
+}
+
+/* use flex for displaying menu item in line. 
+Used gap for the distance between two menu item */
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    gap:40px
+}
+
+/* used this class for setting up image and its content */
+.main-container{
+     background-size: cover;
+    background: linear-gradient(
+         rgba(0, 0, 0, 0.80) 0%, 
+         rgba(0, 0, 0, 0.80) 100%),
+          url("../img/IMG_3915.jpg"),
+           lightgray 50% ;
+   
+    height: 1024px;
+    background-position: 70% 40%;   
+}
+/* Main text container */
+.text-container{
+    display: flex;
+   height: 80%;
+   text-align: center;
+   vertical-align: middle;
+   flex-direction: column;
+   justify-content: center;
+  
+}
+/* hero text  */
+.hero-text{
+font-weight: 700;
+font-size: 60px;
+color: white;
+}
+/* color for text decoration */
+.hero-text .color-text{
+    color: #fb7535; 
+}
+/* small text  */
+.small-text{
+    top:0px;
+    bottom: 0px;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+}
+/* About Section container */
+.section-container {  
+    padding: 112px 178px;
+}
+/* Sub heading text */
+.sub-heading-txt {
+    font-weight: 400;
+    color: #fb7535;
+    font-size: 20px;
+}
+/* main heading text */
+.heading-txt {
+    font-weight: 900;
+    font-size: 40px;
+    padding-bottom: 98px;
+}
+/* container for image and text */
+.about-container{
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+}
+/* image width and height */
+.my-img {  
+    width: 348px;
+    height: 449px;
+}
+/* Text info data */
+.about-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:20px;
+    
+}
+/* main text decoration in about */
+.text-myself{
+    font-weight: 600;
+    font-size: 24px;
+}
+/* Different color text */
+.text-role{
+    color: #fb7535;
+}
+/* Sub text(introduction) decoration */
+.intro{
+    font-weight: 300;
+font-size: 20px;
+}
+/* To align icon and text IN DIV*/
+.tabular-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* icon height width */
+.icon{
+    height: 19px;
+    width: 19px;
+}
+/*to align single icon and text together  */
+.text-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15PX;
+}
+/* Bold text  */
+.text-strong{
+    font-weight: 700;
+font-size: 18px;
+}
+/* light text */
+.text-light{
+    font-size: 18px;
+    font-weight: 400;
+}
+/* Button decoration */
+.btn{
+border-color: #fb7535;
+width: 150px;
+height: 61px;
+border: 1px solid;
+font-weight: 700;
+color: #fb7535;
+font-size: 18px;
+text-align: center;
+display: flex; 
+justify-content: center; 
+align-items: center; 
+}
+/* Services section  */
+#services{
+   background-color: #f9f9f9;
+   padding: 112px 178px;
+}
+/* css for services box */
+.service-box{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+/* css for single item of service */
+.grid-item {    
+  background: white;
+    width: 437px;
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:15px;
+  }
+/* css for single item of service content*/
+.service-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 42px;
+}  
+/* css for service icon */
+.service-icon {
+    height: 70px;
+    width: 70px;
+}
+/* css for service heading */
+.service-name{
+font-weight: 700;
+color: #fb7535;
+font-size: 21px;
+}
+/* css for service brief */
+.service-detail{
+font-weight: 300;
+font-size: 16px;
+/* text-align: justify; */
+}
+/* contact me text css */
+.contact-txt{
+    padding: 112px 178px;
+}
+/* container for contact me section */
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+/* css for contact form */
+.contact-form{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+gap: 30px;
+
+}
+/* padding for single form field */
+.form-field{
+    padding-bottom: 38px;
+
+}
+label{
+    font-size: 15px;
+    font-weight: 400;
+    color: #4f4f4f;
+}
+/* css for single input or text field for input and textarea */
+input,
+textarea {
+width: 450px;
+height: 50px;
+padding: 8px;
+font-weight: 400;
+font-size: 15px;
+border: 2px solid;
+border-color: #c2c2c2;
+}
+/* submit button decoration */
+input[type="submit"] {
+    width: 450px;
+    height: 50px;
+    border: 1px solid;
+    background-color: #fb7535;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+/* height width for image of contact me img */
+.contact-img{
+    width: 452px;
+    height: 344px;
+}
+
+/* css for footer */
+footer{
+    background-color: black;
+    height: 232px;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 178px;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 15px;
+}
+/* social media icon align */
+.social-media{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+/* height width for icon */
+.footer-icon{
+    height: 20px;
+    width: 20px;
+}
+
+
+
+/* Media query for Device screen with max width for 768px */
+@media (max-width: 768px) {
+    body{
+        width: 100vw;
+    }
+    header{
+        padding: 12px 5px;
+        height: 51px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;  
+    }
+    #logo-and-site-name {
+        font-size: 40px;
+        color: black;
+    }
+    .head-container{
+        width: 100vw;
+        background-color: white;
+    }
+    .main-container{
+        height: 800px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        height: 48px;
+        width: 48px;
+    }
+    .hero-text{
+        font-size: 50px;
+    } 
+    .small-text{
+        font-size: 20px;
+    }
+    .section-container {  
+        padding: 40px 10px;
+       justify-content: center;
+    }
+    .sub-heading-txt {
+        font-size: 18px;
+        text-align: center;
+    }   
+    .heading-txt {
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+    .about-container{
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;       
+    }
+    .text-myself{
+        font-size: 20px;
+        text-align: center;
+    }
+    .img-me{
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        align-items: center;
+    }
+    .my-img {  
+        width:270px;
+        height:300px;
+        background-size: cover;
+    }
+    .tabular-info{
+        justify-content: space-around;
+    }
+    .intro{
+    font-size: 17px;
+    }
+    .icon{
+        height: 13px;
+        width: 13px;
+    }
+    .text-icon{
+        gap: 10PX;
+    }
+    .text-strong{
+    font-size: 12px;
+    }
+    .text-light{
+        font-size: 12px;
+    }  
+    .btn{
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    }
+    #services{
+        padding: 40px 10px;
+   }
+   .service-box{
+       padding-bottom: 30px;
+       gap: 30px;
+   }
+   .grid-item {    
+       width: 80vw;
+       height: 180px;
+        padding:12px;
+       gap: 6px;
+     }
+   .service-icon img{
+       height: 30px;
+       width: 30px;
+   }
+   .service-name{
+   font-size: 17px;
+   }
+   .service-detail{
+   font-size: 14px;
+   }
+    .contact-txt{
+        padding: 40px 10px;
+    }
+    .contact-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .contact-form{
+    display: flex;
+    flex-direction: column;
+    }
+    .form-field{
+        padding-bottom: 18px;
+    }
+    label{
+        font-size: 13px;
+    }
+    .img{
+    display: none;
+    }
+    input,
+    textarea {
+    width: 80vw;
+    padding: 18px 30px;
+    font-size: 15px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+    }
+    footer{
+        height: 200px; 
+        padding: 10px 30px;
+        font-size: 15px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .social-media{
+        gap: 25px;
+    }
+    .footer-icon{
+        height: 15px;
+        width: 15px;
+    } 
+}
+/* Media query for Device screen with max width for 320px */
+@media (max-width: 320px) {
+   
+
+    header{
+        padding: 10px 7px;
+        height: 51px;
+    }
+    #logo-and-site-name {
+        font-size: 30px;
+    }
+    .main-container{
+        height: 500px;
+    }
+    .menu-icon{
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+    .hero-text{
+        font-size: 30px;
+    } 
+    .small-text{
+        font-size: 15px;
+    }
+    .section-container {  
+        padding: 30px 10px;
+    }
+    .sub-heading-txt {
+        font-size: 12px;
+    }   
+    .heading-txt {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .about-container{
+        gap: 15px;     
+    }
+    .text-myself{
+        font-size: 20px;
+    }
+    .intro{
+    font-size: 12px;
+    }
+    .icon{
+        height: 8px;
+        width: 8px;
+    }
+    .text-icon{
+        gap: 15PX;
+    }
+    .text-strong{
+    font-size: 10px;
+    }
+    .text-light{
+        font-size: 8px;
+    }  
+    .btn{
+    width: 90vw;
+    height: 50px;
+    font-size: 12px;
+    }
+    #services{
+        padding: 30px 10px;
+   }
+   .service-box{
+       padding-bottom: 20px;
+       gap: 15px;
+   }
+   .grid-item {    
+       width: 80vw;
+       height: 180px;
+        padding:12px;
+       gap: 6px;
+     }
+   .service-icon img{
+       height: 25px;
+       width: 25px;
+   }
+   .service-name{
+   font-size: 15px;
+   }
+   .service-detail{
+   font-size: 12px;
+   }
+    .contact-txt{
+        padding: 30px 10px;
+    }
+    .form-field{
+        padding-bottom: 15px;
+    }
+    label{
+        font-size: 12px;
+    }
+    input,
+    textarea {
+    width: 70vw;
+    padding: 18px 30px;
+    font-size: 12px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        height: 50px;
+        font-size: 12px;
+    }
+    footer{
+        height: 200px; 
+        padding: 10px 30px;
+        font-size: 12px;
+        gap: 20px;
+    }
+    .social-media{
+        gap: 25px;
+    }
+    .footer-icon{
+        height: 5px;
+        width: 5px;
+    } 
+
+}
